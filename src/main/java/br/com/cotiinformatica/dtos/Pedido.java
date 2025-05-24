@@ -1,12 +1,12 @@
 package br.com.cotiinformatica.dtos;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Pedido {
 	
     private Long id;
     private String cliente;
-    private LocalDateTime dataPedido;
+    private Date dataPedido;
     private Double valorTotal;
     private String descricao;
 
@@ -26,11 +26,11 @@ public class Pedido {
         this.cliente = cliente;
     }
 
-    public LocalDateTime getDataPedido() {
+    public Date getDataPedido() {
         return dataPedido;
     }
 
-    public void setDataPedido(LocalDateTime dataPedido) {
+    public void setDataPedido(Date dataPedido) {
         this.dataPedido = dataPedido;
     }
 

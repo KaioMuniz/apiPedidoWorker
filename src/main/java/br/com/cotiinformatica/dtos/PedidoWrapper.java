@@ -1,11 +1,11 @@
 package br.com.cotiinformatica.dtos;
 
-import java.time.OffsetDateTime;
+import java.util.Date;
 
 public class PedidoWrapper {
 
 	private String id;
-	private OffsetDateTime dataGeracao;
+	private Date dataGeracao;
 	private Pedido pedido;
 
 	public String getId() {
@@ -16,11 +16,11 @@ public class PedidoWrapper {
 		this.id = id;
 	}
 
-	public OffsetDateTime getDataGeracao() {
+	public Date getDataGeracao() {
 		return dataGeracao;
 	}
 
-	public void setDataGeracao(OffsetDateTime dataGeracao) {
+	public void setDataGeracao(Date dataGeracao) {
 		this.dataGeracao = dataGeracao;
 	}
 
